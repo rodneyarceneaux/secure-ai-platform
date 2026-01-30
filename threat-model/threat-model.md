@@ -41,3 +41,10 @@ Mitigation:
 - IAM condition keys
 - Session tags
 - Least privilege
+
+- ## Trust Boundaries
+- User → API Gateway (authentication boundary)
+- API Gateway → Lambda (execution boundary)
+- Lambda → AI Service (privileged boundary)
+- AI Service → Logging (audit boundary)
+
